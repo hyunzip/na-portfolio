@@ -66,11 +66,79 @@ index css
 
 #header {position:fixed; top:0; left:0; padding:30px 200px; display:flex; justify-content:space-between; align-items:center; width:100%; height:100px; z-index:200;}
 #header .menu {display: flex;}
-#header .menu li {margin: 0 60px 0 0;}
+#header .menu li {margin: 0 60px 0 0; position:relative;}
+#header .menu li.on::before {position:absolute; content:''; display:block; width:100%; height:4px; background-color:#666; left:0; top:30px;}
 #header .menu li:last-child { margin: 0; }
 #header a {color:#000; font-family:'Orbitron', sans-serif; font-size:20px;}
 
 #header.on {background:-webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1))); box-shadow:rgba(0, 0, 0, 0.1) 0px 6px 12px;}
+
+/* visual animation */
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+			animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	-webkit-animation-delay: 500ms;
+			animation-delay: 500ms;
+  }
+  
+  @-webkit-keyframes slide-right {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateX(-8%);
+			  transform: translateX(-8%);
+	}
+	100% {
+	  opacity: 1;
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+  }
+  
+  @keyframes slide-right {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateX(-8%);
+			  transform: translateX(-8%);
+	}
+	100% {
+	  opacity: 1;
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+  }
+
+  .scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+			animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+  }
+  
+  @-webkit-keyframes scale-in-center {
+	0% {
+	  -webkit-transform: scale(0.8);
+			  transform: scale(0.8);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes scale-in-center {
+	0% {
+	  -webkit-transform: scale(0.8);
+			  transform: scale(0.8);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  opacity: 1;
+	}
+  }
 
 .visual {position:relative; padding:100px 200px 0; width:100%; background-image: radial-gradient( circle 311px at 25.6% 64.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );}
 .visual .cont-wrap {height:500px; display:flex; justify-content:space-between; align-items:center;}
