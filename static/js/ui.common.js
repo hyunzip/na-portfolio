@@ -1,9 +1,5 @@
 $(function(){
 
-	$(document).on('click', 'a', function(e){
-		e.preventDefault();
-	});
-
 
 	// btn-top 상단으로 이동
 	// $(window).scroll(function(){
