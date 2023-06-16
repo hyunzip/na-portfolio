@@ -19,9 +19,28 @@ $(function(){
 		e.preventDefault();
 	});
 
-	// AOS plugin
-	if ($('*[data-aos]').length) {
-		AOS.init();
-	}
+	// 스크롤 시 헤더 고정
+
+	$(document).scroll(function () {
+		if($(this).scrollTop() > 100) {
+			$('#header').addClass('on');
+		} else {
+			$('#header').removeClass('on');
+		}
+	});
+
+	  // 헤더 메뉴 스크롤 연동
+
+	  $(".menu li").each(function() {
+        $(this).click(function(e) {
+            var thisOffset = $("." + $(this).data('id')).offset().top -50;
+            $("html, body").animate({
+                scrollTop: thisOffset
+            }, 2500);
+            $(".menu li").removeClass("on");
+            $(this).addClass('on');
+            e.stopPropagation();
+        });
+    });
 	
 })
