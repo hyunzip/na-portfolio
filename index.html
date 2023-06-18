@@ -1,273 +1,318 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NA-PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NA-PORTFOLIO</title>
 
-	<link rel="stylesheet" type="text/css" href="./static/css/import.css">
+   <link rel="stylesheet" type="text/css" href="./css/import.css">
 
-	<script src="./static/js/jquery-3.6.0.js"></script>
-	<script src="./static/js/jquery-ui.1.12.1.js"></script>
-	<script src="./static/js/jquery.easing.1.4.1.js"></script>
-	<script src="./static/js/ui.common.js"></script>
+   <script src="./js/jquery-3.6.0.js"></script>
+   <script src="./js/jquery-ui.1.12.1.js"></script>
+   <script src="./js/jquery.easing.1.4.1.js"></script>
+   <script src="./js/common.js"></script>
 </head>
 <body>
-	<header id="header">
-		<a href="index.html" class="tit">NA-JIHYUN</a>
-       
-		<ul class="menu">
-            <li data-id="scroll01"><a href="#">PROFILE</a></li>
-            <li data-id="scroll02"><a href="#">SKILLS</a></li>
-            <li data-id="scroll03"><a href="#">WORK</a></li>
-			<li data-id="scroll04"><a href="#">CONTACT</a></li>
-        </ul>
-	</header>
+    <!-- header 시작 -->
+    <header id="header">
+        <div class="inner-wrap">
+            <h1 class="logo"><a href="">포트폴리오</a></h1>
+            <button type="button" class="btn-menu-open"><i class="iconset ico-menu">메뉴 열기</i></button>
+            <ul class="menu">
+                <li data-id="scroll-01"><a href="#">PROFILE</a></li>
+                <li data-id="scroll-02"><a href="#">PROJECT</a></li>
+                <li data-id="scroll-03"><a href="#">CONTACT</a></li>
+            </ul>
 
-	<div class="visual">
-		<p class="tit-intro">
-			WEB PUBLISHER<br> Portfolio
-		</p>
-		<div class="cont-wrap clearfix">
-			<p class="txt-intro slide-right">
-				배우며 성장하고,<br>
-				좋아하는 일을 행복하게 하는 퍼블리셔<br>
-				나지현 입니다.
-			</p>
-			<img src="./static/images/contents/visual-image.png" alt="일러스트 이미지" class="scale-in-center">
-		</div>
-	</div>
+            <ul class="menu-mo">
+                <li data-id="scroll-01"><a href="">PROFILE</a></li>
+                <li data-id="scroll-02"><a href="">PROJECT</a></li>
+                <li data-id="scroll-03"><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- // header 끝 -->
 
-	<div class="contents">
+    <!-- 컨텐츠 영역 -->
+    <div id="contents">
+        <!-- 비주얼 영역 -->
+        <div class="visual-area">
+            <div class="inner-wrap">
+                <div class="iphone">
+                    <div class="top">
+                        <div class="icon-group">
+                            <i class="iconset ico-arrow-blue"></i>
+                            <i class="iconset ico-profile"></i>
+                            <i class="iconset ico-video"></i>
+                        </div>
+                        <p class="txt">Jihyun Na</p>
+                    </div>
+                    <div class="i-message">
+                        <div class="tit-wrap">
+                            <strong>iMessage</strong>
+                            <p class="tit">(오늘) 오전 10:00</p>
+                        </div>
+                        <div class="message-wrap">
+                            <div class="message-block">
+                               당신은 어떤 사람인가요?
+                            </div>
+                            <div class="message-block blue no-ballon">
+                                멈추지 않고 계속 나아가는,<br>
+                                더 나은 모습으로 발전하려는 사람
+                            </div>
+                            <div class="message-block blue">
+                                웹 퍼블리셔 나지현 입니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-tit">
+                    <p class="tit">web publisher</p>
+                    <p class="tit sub">NA-PORTFOLIO</p>
+                </div>
+            </div>
+        </div>
+        <!-- // 비주얼 영역 -->
 
-		<div class="profile-area scroll01">
-			<p class="category">PROFILE</p>
-			<div class="profile-wrap">
-				<div class="category-block">
-					<ul class="list">
-						<li class="icon"><i class="iconset ico-profile"></i></li>
-						<li class="tit">Profile</li>
-						<li class="info">
-							<span class="tit">나지현</span>
-						</li>
-						<li class="info">
-							<i class="iconset ico-birth"></i>
-							<span class="tit">98.05.17</span>
-						</li>
-						<li class="info">
-							<i class="iconset ico-place"></i>
-							<span class="tit">서울 거주 중</span>
-						</li>
-						<li class="info">
-							<i class="iconset ico-mail"></i>
-							<span class="tit">najh7083@gmail.com</span>
-						</li>
-						<li class="info">
-							<i class="iconset ico-call"></i>
-							<span class="tit">010-8972-7083</span>
-						</li>
-					</ul>
-				</div>
+        <!-- 프로필 영역 -->
+        <div class="profile-area scroll-01">
+            <div class="inner-wrap">
+                <!-- 자기소개 -->
+                <div class="profile-block">
+                    <img src="./images/profile.png" alt="애플-미모티콘-이미지">
+                    <div class="profile-desc-wrap">
+                        <p class="tit">저는 이런 사람입니다 !</p>
+                        <div class="desc">
+                            <p class="txt">
+                                안녕하세요. <br>
+                                항상 배우는 자세로 끊임없이 노력하며 발전하는 웹 퍼블리셔 나지현 입니다.<br>
+                                저는 코드를 구현하고 동적인 모션이 더해져 완성된 웹 사이트를 볼 때 뿌듯함을 느끼고,<br>
+                                지금보다 더 나은 코드를 작성하기 위해 새로운 것들을 적극적으로 공부합니다.
+                            </p>
+                            <p class="txt">
+                                구현한 코드가 오류를 발생하더라도 그 오류를 찾아내고 해결해 나는 과정이 흥미롭고<br>
+                                마침내 해결하여 정상적으로 작동하는 사이트를 확인할 때 가장 행복합니다. <br>
+                                이 모든 과정들이 제가 퍼블리셔로 계속 일 하는 가장 큰 원동력이라고 생각합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 자기소개 -->
 
-				<div class="category-block career">
-					<ul class="list">
-						<li class="icon"><i class="iconset ico-career"></i></li>
-						<li class="tit">Career</li>
-						<li class="info">
-							<span class="date">2022.03 ~ 재직중 (1년 4개월)</span>
-							<span class="tit">에이블유컴즈 (퍼블리싱팀 / 주임)</span>
-						</li>
-						<li class="info">
-							<span class="date">2021.09 ~ 2022.02 (6개월)</span>
-							<span class="tit">웹디자인(UI/UX) &amp; 웹퍼블리싱 교육 과정 수료 (이지디자인컴퓨터학원)</span>
-						</li>
-						<li class="info">
-							<span class="date">2021.04</span>
-							<span class="tit">웹디자인 기능사 자격증 취득 (한국산업인력공단)</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="skills-area scroll02">
-				<p class="category">SKILLS</p>
-				<div class="skills-wrap">
-					<div class="category-block">
-						<ul class="list">
-							<li class="icon"><i class="iconset ico-skills"></i></li>
-							<li class="tit">Skills</li>
-						</ul>
-						<div class="skill-list-wrap">
-							<ul class="skill-list">
-								<li>
-									<i class="iconset ico-html"></i>
-									<span class="txt">HTML</span>
-									<span class="desc">웹표준 및 웹접근성을 준수하여 마크업 합니다.</span>
-								</li>
-								<li>
-									<i class="iconset ico-css"></i>
-									<span class="txt">CSS</span>
-									<span class="desc">반응형 및 float, flex로 작업 가능하며, 컴포넌트를 활용하여 css를 효율적으로 작성하기 위해 노력합니다.</span>
-								</li>
-								<li>
-									<i class="iconset ico-jquery"></i>
-									<span class="txt">jQuery</span>
-									<span class="desc">기본적인 동적 기능 구현이 가능하며, javascript도 함께 공부하고 있습니다. </span>
-								</li>
-								<li>
-									<i class="iconset ico-vscode"></i>
-									<span class="txt">VScode</span>
-									<span class="desc">Visual Studio code를 사용해 퍼블리싱 합니다.</span>
-								</li>
-								<li>
-									<i class="iconset ico-github"></i>
-									<span class="txt">Github</span>
-									<span class="desc">개인 포트폴리오 업로드를 위해 깃허브 사용 경험이 있습니다.</span>
-								</li>
-								<li>
-									<i class="iconset ico-svn"></i>
-									<span class="txt">SVN</span>
-									<span class="desc">재직 중인 회사에서 SVN을 사용해 소스 관리를 하고 있습니다.</span>
-								</li>
-								<li>
-									<i class="iconset ico-figma"></i>
-									<span class="txt">Figma</span>
-									<span class="desc">학원 교육 당시 figma를 활용하여 디자인 작업을 하였고, 재직 중인 회사 프로젝트 협업 시 figma를 사용하였습니다.</span>
-								</li>
-								<li>
-									<i class="iconset ico-photoshop"></i>
-									<span class="txt">Photoshop</span>
-									<span class="desc">기본적인 툴 사용이 가능합니다.</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div class="work-area scroll03">
-			<p class="category">WORK</p>
-			<p class="sub">ableucomms project</p>
+                <!-- 기본 정보 및 역량 소개  -->
+                <div class="profile-block">
+                    <div class="profile-wrap">
+                        <div class="block">
+                            <p class="tit">프로필</p>
+                            <ul class="info-block type-02">
+                                <li><b>나지현</b></li>
+                                <li>
+                                    <i class="iconset ico-birth"></i>
+                                    <span class="txt">98.05.17</span>
+                                </li>
+                                <li>
+                                    <i class="iconset ico-place"></i>
+                                    <span class="txt">서울 거주 중</span>
+                                </li>
+                            </ul>
+                            <ul class="info-block type-02">
+                                <li>
+                                    <i class="iconset ico-mail"></i>
+                                    <span class="txt">najh7083@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="iconset ico-call"></i>
+                                    <span class="txt">010-8972-7083</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <p class="tit">교육 및 자격증</p>
+                            <ul class="info-block">
+                                <li class="date">21.09 ~ 22.02</li>
+                                <li class="txt">웹디자인(UI/UX) &amp; 웹퍼블리싱 교육 이수</li>
+                            </ul>
+                            <ul class="info-block">
+                                <li class="date">21.04</li>
+                                <li class="txt">웹디자인기능사 자격증 취득</li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <p class="tit">경력사항</p>
+                            <p class="sub">에이블유컴즈 재직 중</p>
+                            <div class="wrap">
+                                <p class="txt"><strong>2022.03 ~ </strong>(1년 4개월) / 퍼블리셔(주임)</p>
+                                <ul class="info-block">
+                                    <li>
+                                        <i class="iconset ico-chk"></i>
+                                        <span class="txt">정부기관 웹 사이트 리뉴얼 및 구축 퍼블리싱</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconset ico-chk"></i>
+                                        <span class="txt">서비스 홍보 웹 사이트 구축 퍼블리싱</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-wrap">
+                        <ul class="skill-block">
+                            <li class="icon-group">
+                                <i class="iconset ico-html"></i>
+                                <i class="iconset ico-css"></i>
+                                <i class="iconset ico-jquery"></i>
+                            </li>
+                            <li><b>웹 표준 및 웹 접근성을 준수하여 마크업 합니다.</b></li>
+                            <li>
+                                미디어 쿼리를 사용하여 <b>반응형 웹 및 float, flex로 작업 가능</b>하며,<br>
+                                <b>css를 효율적으로 컴포넌트화하여 작성하려고 노력</b>합니다.
+                            </li>
+                            <li>
+                                <b>jQuery와 플러그인을 사용</b>하여 기본적인 동적 기능 구현이 가능하며,<br>
+                                <b>javascript도 함께 공부하며 실무에 적용하려고 노력</b>합니다.
+                            </li>
+                        </ul>
+                        <ul class="skill-block">
+                            <li class="icon-group">
+                                <i class="iconset ico-vscode"></i>
+                                <i class="iconset ico-github"></i>
+                                <i class="iconset ico-svn"></i>
+                            </li>
+                            <li><b>Visual Studio Code를 사용해 퍼블리싱</b> 합니다.</li>
+                            <li>개인 포트폴리오 업로드를 위해 <b>Github를 사용하고 있습니다.</b></li>
+                            <li>재직 중인 회사에서 <b>SVN을 사용하여 소스 관리를 하고 있습니다.</b></li>
+                        </ul>
+                        <ul class="skill-block">
+                            <li class="icon-group">
+                                <i class="iconset ico-figma"></i>
+                                <i class="iconset ico-photoshop"></i>
+                            </li>
+                            <li>
+                                학원 교육 당시 Figma를 활용하여 디자인 작업을 하였고,<br>
+                                재직 중인 회사에서 <b>프로젝트 협업 시 Figma를 사용하였습니다.</b>
+                            </li>
+                            <li>Photoshop의 기본적인 툴 사용이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // 기본 정보 및 역량 소개 -->
+            </div>
+        </div>
+        <!-- // 프로필 영역 -->
 
-			<div class="category-block">
-				<div class="work-thum">
-					<img src="./static/images/contents/thum_01.png" alt="건강보험공단 의료이용지표 웹사이트 썸네일">
-				</div>
-				<ul class="txt-wrap">
-					<li class="tit-project">건강보험공단 - 의료이용지표 웹 사이트 (적응형) 구축</li>
-					<li class="lang">
-						<i class="iconset ico-html">html</i>
-						<i class="iconset ico-css">css</i>
-						<i class="iconset ico-jquery">jquery</i>
-					</li>
-					<li class="date">퍼블리싱 기간 : 2023.03 ~ 2023.06 (진행중)</li>
-					<li class="btn-group">
-						<a href="https://navy-samba-4de.notion.site/3a64f49930e94e9d9e3e3af8ffa88c70?pvs=4" target="_blank" class="a-link" title="새창으로 열기">프로젝트 내용 상세보기</a>
-						<a href="" class="a-link">서비스 오픈 준비 중</a>
-					</li>
-				</ul>
-			</div>
+        <!-- 참여 프로젝트 소개 -->
+        <div class="project-area scroll-02">
+            <div class="inner-wrap">
+                <div class="tit-wrap">
+                    <p class="tit">이런 프로젝트를 경험 했습니다.</p>
+                    <p class="txt">재직중인 회사에서 진행했던 프로젝트 입니다.</p>
+                </div>
+                <div class="project-wrap">
+                    <div class="project-block">
+                        <div class="project">
+                            <p class="tit">건강보험공단 의료이용지표<br> 웹 사이트 구축</p>
+                            <div class="txt-wrap">
+                                <p class="lang"><span>HTML</span><span>CSS</span><span>jQuery</span></p>
+                                <p class="category">적응형 웹</p>
+                                <p class="date">퍼블리싱 기간<span>23.03 ~ 진행 중</span></p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://navy-samba-4de.notion.site/3a64f49930e94e9d9e3e3af8ffa88c70?pvs=4" target="_blank" class="btn" title="새창으로 열기">경력기술서</a>
+                                <a href="" target="_blank" class="btn yellow" title="새창으로 열기">서비스 준비 중</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <p class="tit">오피스넥스<br> 팬트리24 웹 사이트 구축</p>
+                            <div class="txt-wrap">
+                                <p class="lang"><span>HTML</span><span>CSS</span><span>jQuery</span></p>
+                                <p class="category">적응형 웹</p>
+                                <p class="date">퍼블리싱 기간<span>23.03 ~ 23.04</span></p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://navy-samba-4de.notion.site/24-f82047de40aa4383afb950d7ef1df9e0?pvs=4" target="_blank" class="btn" title="새창으로 열기">경력기술서</a>
+                                <a href="https://www.pantry24.co.kr/" target="_blank" class="btn yellow" title="새창으로 열기">웹 사이트</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <p class="tit">오피스넥스<br> 넥스에이전트 웹 사이트 구축</p>
+                            <div class="txt-wrap">
+                                <p class="lang"><span>HTML</span><span>CSS</span><span>jQuery</span></p>
+                                <p class="category">적응형 웹</p>
+                                <p class="date">퍼블리싱 기간<span>23.03 ~ 23.04</span></p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://navy-samba-4de.notion.site/d16a6e166e604bfd85982b5889ef4b1f?pvs=4" target="_blank" class="btn" title="새창으로 열기">경력기술서</a>
+                                <a href="http://www.nexagent.co.kr/" target="_blank" class="btn yellow" title="새창으로 열기">웹 사이트</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block">
+                        <div class="project">
+                            <p class="tit">오피스넥스<br> 빵꾸똥꾸문구야 웹 사이트 구축</p>
+                            <div class="txt-wrap">
+                                <p class="lang"><span>HTML</span><span>CSS</span><span>jQuery</span></p>
+                                <p class="category">적응형 웹</p>
+                                <p class="date">퍼블리싱 기간<span>23.01 ~ 23.02</span></p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://navy-samba-4de.notion.site/ab1eaf36c361414599bb9b2f4f60f5bd?pvs=4" target="_blank" class="btn" title="새창으로 열기">경력기술서</a>
+                                <a href="https://bbanggu.co.kr/" target="_blank" class="btn yellow" title="새창으로 열기">웹 사이트</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <p class="tit">정부24<br> 부분 리뉴얼 프로젝트</p>
+                            <div class="txt-wrap">
+                                <p class="lang"><span>HTML</span><span>CSS</span><span>JS</span></p>
+                                <p class="category">반응형 및 적응형 웹</p>
+                                <p class="date">퍼블리싱 기간<span>22.06 ~ 22.11</span></p>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://navy-samba-4de.notion.site/24-e7494c83a6f841bbb3490fee2c9e343d?pvs=4" target="_blank" class="btn" title="새창으로 열기">경력기술서</a>
+                                <a href="https://www.gov.kr/portal/main" target="_blank" class="btn yellow" title="새창으로 열기">웹 사이트</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 참여 프로젝트 소개 -->
 
-			<div class="category-block">
-				<div class="work-thum">
-					<img src="./static/images/contents/thum_02.png" alt="팬트리24 웹사이트 썸네일">
-				</div>
-				<ul class="txt-wrap">
-					<li class="tit-project">오피스넥스 - 팬트리24 웹 사이트 (적응형) 구축</li>
-					<li class="lang">
-						<i class="iconset ico-html">html</i>
-						<i class="iconset ico-css">css</i>
-						<i class="iconset ico-jquery">jquery</i>
-					</li>
-					<li class="date">퍼블리싱 기간 : 2023.03 ~ 2023.04</li>
-					<li class="btn-group">
-						<a href="https://navy-samba-4de.notion.site/24-f82047de40aa4383afb950d7ef1df9e0?pvs=4" target="_blank" class="a-link" title="새창으로 열기">프로젝트 내용 상세보기</a>
-						<a href="https://www.pantry24.co.kr/" target="_blank" class="a-link" title="새창으로 열기">사이트 바로가기</a>
-					</li>
-				</ul>
-			</div>
+        <!-- 연락처 -->
+        <div class="contact-area scroll-03">
+            <div class="inner-wrap">
+                <p class="tit">Contact.</p>
+                <div class="block">
+                    <p class="desc">
+                        아직 부족한 저의 포트폴리오를 봐주셔서 감사합니다.<br>
+                        아래 연락처 혹은 이메일로 연락 주시다면 빠른 시일내로 회신 드리겠습니다.<br>
+                        감사합니다. 😊
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="iconset ico-mail"></i>
+                            <span class="txt">najh7083@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="iconset ico-call"></i>
+                            <span class="txt">010-8972-7083</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- // 연락처 -->
+    </div>
+    <!-- // 컨텐츠 영역 -->
 
-			<div class="category-block">
-				<div class="work-thum">
-					<img src="./static/images/contents/thum_03.png" alt="넥스에이전트 웹사이트 썸네일">
-				</div>
-				<ul class="txt-wrap">
-					<li class="tit-project">오피스넥스 - 넥스에이전트 웹 사이트 (적응형) 구축</li>
-					<li class="lang">
-						<i class="iconset ico-html">html</i>
-						<i class="iconset ico-css">css</i>
-						<i class="iconset ico-jquery">jquery</i>
-					</li>
-					<li class="date">퍼블리싱 기간 : 2023.03 ~ 2023.04</li>
-					<li class="btn-group">
-						<a href="https://navy-samba-4de.notion.site/d16a6e166e604bfd85982b5889ef4b1f?pvs=4" target="_blank" class="a-link" title="새창으로 열기">프로젝트 내용 상세보기</a>
-						<a href="http://www.nexagent.co.kr/" target="_blank" class="a-link" title="새창으로 열기">사이트 바로가기</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="category-block">
-				<div class="work-thum">
-					<img src="./static/images/contents/thum_04.png" alt="빵꾸똥꾸문구야 웹사이트 썸네일">
-				</div>
-				<ul class="txt-wrap">
-					<li class="tit-project">오피스넥스 - 빵꾸똥꾸문구야 웹 사이트 (적응형) 구축</li>
-					<li class="lang">
-						<i class="iconset ico-html">html</i>
-						<i class="iconset ico-css">css</i>
-						<i class="iconset ico-jquery">jquery</i>
-					</li>
-					<li class="date">퍼블리싱 기간 : 2023.01 ~ 2023.02</li>
-					<li class="btn-group">
-						<a href="https://navy-samba-4de.notion.site/ab1eaf36c361414599bb9b2f4f60f5bd?pvs=4" target="_blank" class="a-link" title="새창으로 열기">프로젝트 내용 상세보기</a>
-						<a href="https://bbanggu.co.kr/" target="_blank" class="a-link" title="새창으로 열기">사이트 바로가기</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="category-block">
-				<div class="work-thum">
-					<img src="./static/images/contents/thum_05.png" alt="빵꾸똥꾸문구야 웹사이트 썸네일">
-				</div>
-				<ul class="txt-wrap">
-					<li class="tit-project">정부24 - 웹 사이트 부분 (반응형&amp;적응형) 리뉴얼</li>
-					<li class="lang">
-						<i class="iconset ico-html">html</i>
-						<i class="iconset ico-css">css</i>
-						<i class="iconset ico-jquery">jquery</i>
-					</li>
-					<li class="date">퍼블리싱 기간 : 2022.06 ~ 2022.11</li>
-					<li class="btn-group">
-						<a href="https://navy-samba-4de.notion.site/24-e7494c83a6f841bbb3490fee2c9e343d?pvs=4" target="_blank" class="a-link" title="새창으로 열기">프로젝트 내용 상세보기</a>
-						<a href="https://www.gov.kr/portal/main" target="_blank" class="a-link" title="새창으로 열기">사이트 바로가기</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="contact-area scroll04">
-			<p class="category">CONTACT</p>
-
-			<div class="category-block">
-				<p classs="desc">
-					아직 부족한 저의 포트폴리오를 봐주셔서 감사합니다. <br>
-					아래 연락처 혹은 이메일로 연락 주신다면 빠른 시일 내에 회신 드리겠습니다.<br>
-					감사합니다 😊
-				</p>
-				<ul class="list">
-					<li class="info">
-						<i class="iconset ico-mail"></i>
-						<strong class="tit">najh7083@gmail.com</strong>
-					</li>
-					<li class="info">
-						<i class="iconset ico-call"></i>
-						<strong class="tit">010-8972-7083</strong>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner-wrap">
+            <img src="./images/logo-footer.png" alt="로고이미지">
+            <p class="txt">본 페이지는 개인 포트폴리오 목적으로 제작되었음을 알려드립니다.</p>
+            <p class="txt">© 2023 JI HYUN NA. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- // footer -->
+   
 </body>
 </html>
