@@ -85,6 +85,7 @@ index css
 #header.on {background:-webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1))); box-shadow:rgba(0, 0, 0, 0.1) 0px 6px 12px;} 
 
 #header .btn-menu-open {display:none;}
+#header .btn-close {display:none;}
 #header .menu-mo {display:none;}
 
 /* 비주얼 영역 css */
@@ -248,6 +249,12 @@ index css
     #header .inner-wrap {padding:0 20px;}
     #header .menu {display:none;}
     #header .btn-menu-open {display:block;}
+    #header .menu-mo {display:block; position:fixed; top:0; left:100%; width:100%; height:100%; transition:left .3s, visibility .3s; background-color:rgba(255, 255, 255, 0.9); z-index:100;}
+    #header .menu-mo.open {visibility:visible; left:0; padding:200px 20px 0; text-align:center;}
+
+    #header .menu-mo .btn-close {display:block; position:absolute; top:30px; right:45px;}
+    #header .menu-mo.open li {font-size:25px; font-weight:bold;}
+    #header .menu-mo.open li + li {margin-top:30px;}
 
     .visual-area .inner-wrap {padding:70px;}
 
