@@ -10,7 +10,7 @@ $(function(){
     });
 
     // 헤더 메뉴 & 컨텐츠 스크롤 연동
-    $('.menu li').each(function() {
+    $('.menu li, .menu-mo li').each(function() {
         $(this).click(function(e) {
             let thisOffset = $('.' + $(this).data('id')).offset().top - 130;
             $('html, body').animate({
@@ -21,4 +21,14 @@ $(function(){
             e.stopPropagation();
         });
     });
+
+    // 메뉴 열고 닫기
+	if($('.menu-mo').length) {
+		$(document).on('click', '.btn-menu-open', function(){
+			$('.menu-mo').addClass('open');
+		});
+		$(document).on('click', '.btn-close', function(){
+			$('.menu-mo').removeClass('open');
+		});
+	}
 })
