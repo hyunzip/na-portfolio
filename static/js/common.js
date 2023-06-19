@@ -23,12 +23,12 @@ $(function(){
     });
 
     // 메뉴 열고 닫기
-	if($('.menu-mo').length) {
+	if($('.menu-mo-wrap').length) {
 		$(document).on('click', '.btn-menu-open', function(){
-			$('.menu-mo').addClass('open');
+			$('.menu-mo-wrap').addClass('open');
 		});
 		$(document).on('click', '.btn-close', function(){
-			$('.menu-mo').removeClass('open');
+			$('.menu-mo-wrap').removeClass('open');
 		});
 	}
 })
